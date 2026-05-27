@@ -1,0 +1,509 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+   
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f6f4f4;
+    padding: 16px 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* All links */
+.header a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Buttons container */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.header button {
+    padding: 8px 16px;
+    background-color: rgb(76, 175, 79);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.heading-green {
+    color: rgb(76, 175, 79);
+}
+
+.heading {
+    text-align: center;
+}
+
+.header a:hover {
+    color: rgb(76, 175, 79);
+}
+
+.header button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(76, 175, 79);
+}
+
+/* Logo */
+.logo {
+    font-weight: bolder;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a {
+        padding: 8px 0;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header button {
+        width: 140px;
+    }
+
+}
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+    background-color: #f8f9fb;
+    flex-wrap: wrap;
+}
+
+/* Left Text */
+.hero-text {
+    max-width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Green text */
+.text-green {
+    color: rgb(76, 175, 79);
+    font-size: 52px;
+    font-weight: bold;
+}
+
+/* Button */
+.hero-container button {
+    background-color: rgb(76, 175, 79);
+    color: white;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-container button:hover {
+    background-color: black;
+}
+
+/* Image */
+.hero-container img {
+    max-width: 40%;
+    width: 100%;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .text-green {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-container img {
+        max-width: 80%;
+    }
+}
+.client-container {
+    padding: 40px 20px;
+}
+
+/* Text Section */
+.client-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.client-text h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 36px;
+}
+
+.client-text p {
+    color: #666;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* Client Logos */
+.client-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.client-links img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.client-links img:hover {
+    transform: scale(1.1);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .client-text h3 {
+        font-size: 28px;
+    }
+
+    .client-text p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .client-links {
+        gap: 25px;
+    }
+
+    .client-links img {
+        width: 70px;
+    }
+}
+.cards-container h1 {
+    text-align: center;
+    color: #4caf4f;
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cards-container p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+/* GRID CONTAINER */
+.our-community-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* CARD */
+.community-card {
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    background-color: #dcdadab8;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+    .our-community-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .our-community-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-container h1 {
+        font-size: 26px;
+    }
+}
+.community-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0;
+    
+}
+.community-section-text{
+    
+    text-align: center;
+    padding: 0 24px;
+    font-size:20px;
+    font-weight:500;
+    width: 100%;
+    max-width: 600px;
+
+    
+}
+.community-section-text p{
+    margin-top: 20px;
+    font-size: 18px;
+    color:#555;
+}
+.btn-green{
+    background-color: rgb(76, 175, 79);
+    color:white;
+    border-radius: 6px;
+    padding:12px 28px;
+    font-size: 16px;
+}
+.achievements-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+    padding: 0 60px;   /* 👈 main fix (gives left + right space) */
+}
+.achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+.achievements-text {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+
+    text-align: center;       /* text alignment */
+    min-width: 280px;
+}
+.achievement-heading{
+    justify-content: center;  /* vertical center */
+    align-items: center;      /* horizontal center */
+color:rgb(76, 175, 79);
+    text-align: center;       /* text alignment */
+    min-width: 280px;
+}
+
+/* CARD FIX */
+.achievements-cards {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    justify-items: center; /* 👈 centers each card inside grid */
+}
+
+/* IMAGE */
+.achievement-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.card-number {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+.last-section{
+    
+    text-align: center;
+    gap: 30px;
+    padding: 60px 0;
+}
+.last-section button{
+    background-color: rgb(76, 175, 79);
+    color:white;
+    border-radius: 6px;
+    padding:12px 28px;
+    font-size: 16px;
+}
+.community-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* IMAGE */
+.community-section img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* TEXT */
+.community-section-text {
+    width: 55%;
+}
+
+.community-section-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.community-section-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn-green {
+    background-color: rgb(76, 175, 79);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-green:hover {
+    background-color: black;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .community-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .community-section img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .community-section-text {
+        width: 100%;
+    }
+
+    .community-section-text h2 {
+        font-size: 24px;
+    }
+
+    .community-section-text p {
+        font-size: 14px;
+    }
+}
